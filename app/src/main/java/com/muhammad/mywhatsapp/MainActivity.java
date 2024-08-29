@@ -81,6 +81,8 @@ public class MainActivity extends AppCompatActivity {
             return true;
         } else if (id == R.id.settings) {
             Toast.makeText(MainActivity.this, "Settings", Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(MainActivity.this, Settings.class);
+            startActivity(intent);
             return true;
         }
                 return super.onOptionsItemSelected(item);
